@@ -11,6 +11,10 @@
 
     <link rel=icon href="./img/Logo.png">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/nanogallery2@2.4.1/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.1/dist/jquery.nanogallery2.min.js"></script>
+
     <style>
       .bg-cover {
           background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ),
@@ -113,14 +117,26 @@
             <h2>Photos</h2>
           </div>
           <div class="columns content">
-            <div class="column is-4"><div class="card"><div class="card-image"><figure class="image is-4by3 photo"><img src="./img/d1.jpg" alt="Placeholder image"></figure><div class="packages-caption"><div class="vertical-align has-background-primary"></div></div></div></div></div>
-            <div class="column is-4"><div class="card"><div class="card-image"><figure class="image is-4by3 photo"><img src="./img/d2.jpg" alt="Placeholder image"></figure><div class="packages-caption"><div class="vertical-align has-background-primary"></div></div></div></div></div>
-            <div class="column is-4"><div class="card"><div class="card-image"><figure class="image is-4by3 photo"><img src="./img/d3.jpg" alt="Placeholder image"></figure><div class="packages-caption"><div class="vertical-align has-background-primary"></div></div></div></div></div>
-          </div>
-          <div class="columns content">
-            <div class="column is-4"><div class="card"><div class="card-image"><figure class="image is-4by3 photo"><img src="./img/d4.jpg" alt="Placeholder image"></figure><div class="packages-caption"><div class="vertical-align has-background-primary"></div></div></div></div></div>
-            <div class="column is-4"><div class="card"><div class="card-image"><figure class="image is-4by3 photo"><img src="./img/d5.jpg" alt="Placeholder image"></figure><div class="packages-caption"><div class="vertical-align has-background-primary"></div></div></div></div></div>
-            <div class="column is-4"><div class="card"><div class="card-image"><figure class="image is-4by3 photo"><img src="./img/d6.jpg" alt="Placeholder image"></figure><div class="packages-caption"><div class="vertical-align has-background-primary"></div></div></div></div></div>
+
+            <div class="column">
+              <div id="nanogallery2"
+                   // gallery configuration
+                   data-nanogallery2 = '{
+                       "thumbnailWidth":   "auto",
+                       "thumbnailHeight":  200,
+                       }'
+              >
+                <!-- content of the gallery -->
+                <a href="./img/d1.jpg" data-ngthumb="./img/d1.jpg">Cuisine</a>
+                <a href="./img/d2.jpg" data-ngthumb="./img/d2.jpg">Peinture</a>
+                <a href="./img/d3.jpg" data-ngthumb="./img/d3.jpg">Peinture</a>
+                <a href="./img/d4.jpg" data-ngthumb="./img/d4.jpg">Papier</a>
+                <a href="./img/d5.jpg" data-ngthumb="./img/d5.jpg">Papier</a>
+                <a href="./img/d6.jpg" data-ngthumb="./img/d6.jpg">Cuisine</a>
+                <a href="./img/d7.jpg" data-ngthumb="./img/d7.jpg">Parquet</a>
+              </div>
+            </div>
+
           </div>
 
           <!-- PRESTATIONS -->
@@ -167,7 +183,7 @@
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img src="./img/a-propos.jpg" alt="Placeholder image">
+                    <img src="./img/a-propos-thumbnail.jpg" alt="Placeholder image">
                   </figure>
                   <div class="packages-caption">
                     <div class="vertical-align has-background-primary"> </div>
