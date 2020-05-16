@@ -84,10 +84,22 @@
       .photo {
           margin-bottom: 0em !important;
       }
+
+      /* NANO GALLERY */
+      .title.nGEvent {
+          font-weight: 400;
+          margin-bottom: 0px;
+          line-height: 0;
+          color: #fff;
+          font-size: 1em;
+      }
+      .nGY2 .toolbar .ngbt {
+          font-size: 1em;
+      }
     </style>
   </head>
   <body>
-    <section class="hero is-info is-fullheight bg-cover bottom-spacing-large">
+    <section class="hero is-large is-info bg-cover bottom-spacing-large">
       <div class="hero-body">
         <div class="container has-text-centered">
           <div class="column is-6 is-offset-3">
@@ -116,7 +128,7 @@
             <!-- <h2>Photos</h2> -->
             <h2>Photos</h2>
           </div>
-          <div class="columns content">
+          <div class="columns">
 
             <div class="column">
               <div id="nanogallery2"
@@ -124,14 +136,18 @@
                    data-nanogallery2 = '{
                        "thumbnailWidth":   "auto",
                        "thumbnailHeight":  200,
+                       "thumbnailHoverEffect2": "scale120",
+                       "galleryDisplayTransition":            "none",
+                       "galleryDisplayTransitionDuration":    500,
+                       "imageTransition": "swipe"
                        }'
               >
                 <!-- content of the gallery -->
                 <a href="./img/d1.jpg" data-ngthumb="./img/d1.jpg">Cuisine</a>
                 <a href="./img/d2.jpg" data-ngthumb="./img/d2.jpg">Peinture</a>
                 <a href="./img/d3.jpg" data-ngthumb="./img/d3.jpg">Peinture</a>
-                <a href="./img/d4.jpg" data-ngthumb="./img/d4.jpg">Papier</a>
-                <a href="./img/d5.jpg" data-ngthumb="./img/d5.jpg">Papier</a>
+                <a href="./img/d4.jpg" data-ngthumb="./img/d4.jpg">Papier peint</a>
+                <a href="./img/d5.jpg" data-ngthumb="./img/d5.jpg">Papier peint</a>
                 <a href="./img/d6.jpg" data-ngthumb="./img/d6.jpg">Cuisine</a>
                 <a href="./img/d7.jpg" data-ngthumb="./img/d7.jpg">Parquet</a>
               </div>
